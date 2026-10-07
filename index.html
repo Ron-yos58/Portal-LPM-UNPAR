@@ -35,10 +35,10 @@
 <div class="flex flex-wrap gap-space-xs mb-space-xl"><span class="inline-flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-primary">outbox</span>Surat Keluar</span><span class="inline-flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-primary">move_to_inbox</span>Surat Masuk</span><span class="inline-flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-primary">description</span>Dokumen Penjaminan Mutu</span><span class="inline-flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-primary">workspace_premium</span>Sertifikat</span><span class="inline-flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-primary">swap_horiz</span>Peminjaman</span><span class="inline-flex items-center gap-1 px-space-sm py-1.5 rounded-lg bg-surface-container-low text-on-surface-variant font-label-md text-label-md"><span class="material-symbols-outlined text-[16px] text-primary">contacts</span>Manajemen Kontak</span></div>
 </div>
 <div class="pt-space-md mt-auto">
-<button class="w-full py-3 px-space-md rounded-lg bg-gradient-to-r from-primary to-primary-container hover:shadow-lg text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-md transition-all duration-300 group-hover:gap-space-md button-active active:scale-95" id="btn-admin-login">
+<a class="w-full py-3 px-space-md rounded-lg bg-gradient-to-r from-primary to-primary-container hover:shadow-lg text-on-primary font-label-lg text-label-lg flex items-center justify-center gap-space-sm shadow-md transition-all duration-300 group-hover:gap-space-md button-active active:scale-95" href="https://lpm.unpar.ac.id/dashboardadmlpm" target="_blank" rel="noopener noreferrer">
 <span class="">Masuk Layanan SI</span>
 <span class="material-symbols-outlined text-[20px] transition-transform group-hover:translate-x-1">arrow_forward</span>
-</button>
+</a>
 </div>
 </div>
 <div class="group relative bg-gradient-to-br from-surface-container-lowest to-surface rounded-2xl p-space-lg md:p-space-xl shadow-lg hover:shadow-2xl transition-all duration-500 flex flex-col justify-between overflow-hidden animate-[rise_.65s_ease-out_.36s_both] hover:scale-102 hover:-translate-y-2 cursor-pointer">
@@ -71,46 +71,6 @@
 <footer class="w-full text-center py-6 mt-8 border-t border-outline-variant/40"><p class="text-body-sm font-label-md text-on-surface-variant tracking-wide">© 2026 LPM UNPAR • Developed by <a href="https://ron-yos58.github.io/Portofolio-RS/" target="_blank" rel="noopener noreferrer" class="font-bold text-primary hover:underline hover:text-primary-container transition-colors">Ronald Sebastian</a></p></footer></div>
 </div>
 </div></main>
-
-<!-- Modal Login -->
-<div id="login-modal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
-  <div class="bg-surface rounded-2xl shadow-2xl p-space-xl max-w-md w-full mx-margin-mobile animate-[scaleIn_.3s_ease-out]">
-    <div class="flex items-center gap-space-md mb-space-lg">
-      <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-primary-container flex items-center justify-center">
-        <span class="material-symbols-outlined text-on-primary text-[24px]">lock</span>
-      </div>
-      <div>
-        <h2 class="font-headline-md text-headline-md text-on-surface">Verifikasi Akses</h2>
-        <p class="font-body-sm text-body-sm text-on-surface-variant">Masukkan kredensial</p>
-      </div>
-    </div>
-    
-    <form id="login-form" class="space-y-space-md">
-      <div>
-        <label class="block font-label-md text-label-md text-on-surface mb-space-xs">Username</label>
-        <input type="text" id="username-input" placeholder="admin" class="w-full px-space-md py-space-sm rounded-lg border border-outline bg-surface-container-lowest text-on-surface placeholder-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-      </div>
-      
-      <div>
-        <label class="block font-label-md text-label-md text-on-surface mb-space-xs">Password</label>
-        <input type="password" id="password-input" placeholder="••••••••" class="w-full px-space-md py-space-sm rounded-lg border border-outline bg-surface-container-lowest text-on-surface placeholder-on-surface-variant focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
-      </div>
-
-      <div id="error-message" class="hidden px-space-md py-space-sm rounded-lg bg-error-container text-error font-body-sm text-body-sm">
-        Username atau password salah
-      </div>
-
-      <div class="flex gap-space-md pt-space-md">
-        <button type="button" id="btn-cancel" class="flex-1 py-space-md px-space-md rounded-lg border border-outline text-on-surface font-label-lg text-label-lg hover:bg-surface-container transition-colors">
-          Batal
-        </button>
-        <button type="submit" class="flex-1 py-space-md px-space-md rounded-lg bg-gradient-to-r from-primary to-primary-container text-on-primary font-label-lg text-label-lg hover:shadow-lg transition-all">
-          Masuk
-        </button>
-      </div>
-    </form>
-  </div>
-</div>
 
 <style>
 @keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
@@ -159,60 +119,6 @@ body{scroll-behavior:smooth;}
 
     updateClock();
     setInterval(updateClock, 1000);
-  })();
-
-  // Login Modal Handler
-  (function() {
-    const loginModal = document.getElementById('login-modal');
-    const loginForm = document.getElementById('login-form');
-    const btnAdminLogin = document.getElementById('btn-admin-login');
-    const btnCancel = document.getElementById('btn-cancel');
-    const usernameInput = document.getElementById('username-input');
-    const passwordInput = document.getElementById('password-input');
-    const errorMessage = document.getElementById('error-message');
-    const adminServiceUrl = 'https://lpm.unpar.ac.id/dashboardadmlpm';
-
-    // Credentials
-    const validUsername = 'adminlpm';
-    const validPassword = 'MERDEKA45';
-
-    function openModal() {
-      loginModal.classList.remove('opacity-0', 'pointer-events-none');
-      loginModal.classList.add('opacity-100', 'pointer-events-auto');
-      usernameInput.focus();
-    }
-
-    function closeModal() {
-      loginModal.classList.add('opacity-0', 'pointer-events-none');
-      loginModal.classList.remove('opacity-100', 'pointer-events-auto');
-      errorMessage.classList.add('hidden');
-      loginForm.reset();
-    }
-
-    btnAdminLogin.addEventListener('click', openModal);
-    btnCancel.addEventListener('click', closeModal);
-
-    loginForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const username = usernameInput.value;
-      const password = passwordInput.value;
-
-      if (username === validUsername && password === validPassword) {
-        closeModal();
-        window.open(adminServiceUrl, '_blank', 'noopener,noreferrer');
-      } else {
-        errorMessage.classList.remove('hidden');
-        passwordInput.value = '';
-        passwordInput.focus();
-      }
-    });
-
-    // Close modal on ESC key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && !loginModal.classList.contains('opacity-0')) {
-        closeModal();
-      }
-    });
   })();
 
   // Check service status
